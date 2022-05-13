@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/disinv"
+
+    android:layout_width="match_parent"
+    android:id="@+id/frameLayout2"
+    android:layout_height="match_parent"
+    android:background="#62B3A0"
+    tools:context=".agregarAsignacion">
+
+    <android.widget.Button
+        android:id="@+id/btnFecha"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/calendar"
+        android:backgroundTint="#F3EFEF"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.418"
+        app2:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+        app2:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app2:layout_constraintVertical_bias="0.304"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="116dp"
+        android:layout_height="115dp"
+        android:src="@drawable/asignacion"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.469"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.146"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputNombreEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:textColorHint="#000000"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.358"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:placeholderTextColor="#FFFFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombreEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#00000000"
+            android:hint="Nombre de empleado"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFEFE"
+        android:textColorHint="#FFFFFF"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/textInputNombreEmpleado"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:placeholderTextColor="#FFFFFF"></com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#FFFEFE"
+        android:textColorHint="#FFFFFF"
+        app2:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:placeholderTextColor="#FFFFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#000000"
+            android:backgroundTint="#00000000"
+            android:hint="Área de trabajo"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FFFEFE"
+        android:textColorHint="#FFFFFF"
+        app2:layout_constraintBottom_toTopOf="@+id/btnInsertAsig"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.0"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:placeholderTextColor="#FFFFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFechaCompra"
+            android:layout_width="282dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#00000000"
+            android:clickable="false"
+            android:enabled="false"
+            android:hint="Fecha"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnInsertAsig"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bordesboton"
+        android:text="INSERTAR"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintVertical_bias="0.138" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

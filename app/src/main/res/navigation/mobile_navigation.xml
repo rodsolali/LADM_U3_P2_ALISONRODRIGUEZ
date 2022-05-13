@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/agregarInventario"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.agregarInventario"
+        android:label="fragment_agregar_inventario"
+        tools:layout="@layout/fragment_agregar_inventario" />
+    <fragment
+        android:id="@+id/listaInventario"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.listaInventario"
+        android:label="fragment_lista_inventario"
+        tools:layout="@layout/fragment_lista_inventario" >
+        <action
+            android:id="@+id/action_listaInventario_to_editarInventario"
+            app:destination="@id/editarInventario" />
+        <argument
+            android:name="CodigoBarras"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_listaInventario_to_agregarAsignacion"
+            app:destination="@id/agregarAsignacion" />
+        <argument android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarAsignacion"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.agregarAsignacion"
+        android:label="fragment_agregar_asignacion"
+        tools:layout="@layout/fragment_agregar_asignacion" >
+        <action
+            android:id="@+id/action_agregarAsignacion_to_listaInventario"
+            app:destination="@id/listaInventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaAsignacion"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.listaAsignacion"
+        android:label="fragment_lista_asignacion"
+        tools:layout="@layout/fragment_lista_asignacion" >
+        <action
+            android:id="@+id/action_listaAsignacion_to_editarAsignacion"
+            app:destination="@id/editarAsignacion" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarInventario"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.editarInventario"
+        android:label="fragment_editar_inventario"
+        tools:layout="@layout/fragment_editar_inventario" >
+        <action
+            android:id="@+id/action_editarInventario_to_listaInventario"
+            app:destination="@id/listaInventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarAsignacion"
+        android:name="mx.tecnm.tepic.ladm_u3_p1_alisonrodriguez.editarAsignacion"
+        android:label="fragment_editar_asignacion"
+        tools:layout="@layout/fragment_editar_asignacion" />
+
+</navigation>
